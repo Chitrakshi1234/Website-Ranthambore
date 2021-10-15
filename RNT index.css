@@ -1,0 +1,398 @@
+body{
+  background-image: url(bg.png);
+}
+header {
+    padding: 3px;
+    background-image: linear-gradient(to right, #33ccff 0%, #3366cc 100%);
+    width: 1100px;
+    margin-left: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+nav {
+    
+    overflow: hidden;
+}
+nav a {
+    text-decoration: none;
+    padding: 3px;
+    text-align: center;
+    float: left;
+    font-size: 20px;
+    font-family: calibri;
+    color:#595959;
+    margin-top: 3px;
+}
+
+nav a:hover{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(3, 31, 48);
+    transition: 0.5s;
+}
+
+span{
+	color:yellow;
+	font-weight: bold;
+}
+.slideshow-container {
+  background: linear-gradient(to bottom right, #000066 45%, transparent 50%);
+  position: relative;
+  width: 1100px;
+  height:550px;
+  margin-top: 35px;
+  margin-left: 80px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Hide the images by default */
+.slideshow {
+  display: none;
+filter: drop-shadow(8px 8px 10px black);
+width: 1100px;
+  height:550px;
+  margin: 0 auto;
+  opacity: 0.8;
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1100px;
+  height:550px;
+
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+
+  
+}
+
+.slideshow:hover .overlay {
+  width: 40%;
+  opacity: 0.7;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#welcome{
+  
+	height:540px;
+	width:1100px;
+	background-color:aquamarine;
+	margin-top: 10px;
+	margin-left: 80px;
+	filter: drop-shadow(8px 8px 10px black);
+	background: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)),url('https://somethingoffreedom.com/wp-content/uploads/2020/03/A-wild-tiger-sighting-on-safari-Ranthambore-National-Park-travel-guide.jpg'); 
+  
+}
+
+h1{
+	font-size:30px;
+	color: #45B8AC;
+	text-align: center;
+	padding-top: 30px;
+	font-family: "Garamond";
+	line-height:50px;
+	text-shadow: 1px 1px 2px #000000;
+	letter-spacing: 3px;
+  
+}
+
+#hiddenPara, #visiblePara{
+  font-size: 20px;
+  color: white;
+  font-family: arial;
+  margin-left:105px;
+  margin-right: 25px;
+  line-height:30px;
+  text-align: center;
+  max-width: 900px;
+  
+}
+/* #hiddenPara{
+  display: none;
+} */
+.reach{
+	height:470px;
+	width:1100px;
+	background-color: white;
+	margin-top: 60px;
+  margin-left: 80px;
+  background: linear-gradient(to bottom right, #b3cffa 50%, white 50%);
+	filter: drop-shadow(8px 8px 10px black);
+  
+}
+
+
+.mode{
+  margin-top: 60px;
+  width: 250px;
+  height: 40px;
+  background: #66a3ff;
+  transition: width 2s, height 2s;
+  border-radius: 15px;
+  overflow: hidden;
+  filter: drop-shadow(8px 8px 10px black);
+}
+.l{
+ position: absolute;
+ display: inline-block;
+ margin-left: 70px;
+ cursor: pointer;
+}
+.m{
+  position: absolute;
+  display: inline-block;
+  margin-left: 410px;
+  cursor: pointer;
+ }
+ .r{
+  position: absolute;
+  display: inline-block;
+  margin-left: 730px;
+  cursor: pointer;
+ }
+
+ .air{
+  position: absolute;
+  display: inline-block;
+  margin-left: 180px;
+ }
+ .rail{
+  position: absolute;
+  display: inline-block;
+  margin-left: 520px;
+ }
+ .road{
+  position: absolute;
+  display: inline-block;
+  margin-left: 840px;
+ }
+.mode-head{
+	text-align: center;
+	margin-top:10px;
+	font-size:18px;
+	color:#0000cc;
+	font-family: "Garamond";
+	text-shadow: 1px 1px 2px white;
+	letter-spacing: 3px;
+}
+.mode-body{
+	margin-left: 20px;
+	font-size: 15px;
+	color:white;
+	font-family: "arial";
+	letter-spacing: 3px;
+	line-height: 25px;
+  text-align: justify; 
+  margin-right: 20px;
+}
+.mode:hover {
+  width: 250px;
+  height: 420px;
+}
+
+.section-4{
+  position: relative;
+  height:640px;
+	width:1100px;
+	background-color:transparent;
+	margin-top: 60px;
+	margin-left: 80px;
+	z-index: -1;
+	filter: drop-shadow(8px 8px 10px black);
+  background: linear-gradient(rgba(0, 0, 50, 0.6),rgba(0, 0, 50, 0.6)),url('https://www.businessinsider.in/photo/82015255/Master.jpg');
+  background-size: contain;
+}
+
+.visit{
+  font-size: 20px;
+  color: white;
+  font-family: arial;
+  margin-left:105px;
+  margin-right: 25px;
+  line-height:30px;
+  text-align: center;
+  max-width: 900px;
+}
+
+.section-5{
+display: flex;
+align-items: flex-start;
+}
+
+
+.section-5 img{
+  width: 230px;
+  height: 210px;
+  border-radius: 50%;
+  margin-left: 85px;
+  margin-top: 40px;
+  filter: drop-shadow(8px 8px 10px black);
+  border: 2px solid blue;
+  cursor: pointer;
+  
+}
+
+ .section-5 h4{
+  margin-left: 85px;
+  cursor: pointer;
+}
+
+
+.section-5 h4{
+  font-size:23px;
+	color: #aad8d3;
+	text-align: center;
+	margin-top: 50px;
+	font-family: "Garamond";
+	line-height:30px;
+	text-shadow: 1px 1px 2px #000000;
+	letter-spacing: 3px;
+}
+
+.section-5 img:hover{
+  
+  width: 250px;
+  height: 220px;
+  transition: 0.6s;
+  
+}
+
+
+.section-5 h4:hover{
+  text-decoration: underline;
+  color: #0a5fdf;
+}
+
+.media-btn{
+  height: 35vh;
+  width: 45px;
+  /* background-color: transparent; */
+  position: fixed;
+  background-color:yellowgreen;
+  margin-top: 220px;
+  border-radius: 5px;
+}
+
+.media-btn img{
+  width: 20px;
+  filter: invert();
+  margin-left: 13px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.media-btn img:hover{
+  width: 23px;
+  filter: invert(30%);
+}
+
+.gallery{
+  height: 900px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.548);
+  margin-top: 40px;
+  
+}
+
+.gallery .v1,.gallery .v2,.gallery .v3{
+  position: absolute;
+  border: 1px solid rgb(49, 203, 241);
+}
+
+.gallery .v1{
+  margin-left: 20px;
+ 
+}
+.gallery .v2{
+  margin-left: 460px;
+}
+.gallery .v3{
+  margin-left:800px;
+}
+
+.gallery .v1:hover{
+  width: 450px;
+  height: 350px;
+  transition: 0.5s;
+  z-index: 1;
+}
+.gallery .v2:hover{
+  width: 250px;
+  height: auto;
+  transition: 0.5s;
+  z-index: 1;
+}
+.gallery .v3:hover{
+  width: 550px;
+  height: 350px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+#footer{
+  height: 300px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.548);
+  margin-top: 60px;
+}

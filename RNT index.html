@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+	<link rel="stylesheet" href="RNT index.css">
+</head>
+<body style="background-color:#ccccff ">
+  <aside class="media-btn">
+    <img src="facebook.png" alt="facebook"><br>
+    <img src="instagram.png" alt="instagram"><br>
+    <img src="twitter.png" alt="twitter"><br>
+    <img src="linkedin.png" alt="linkedin">
+  </aside>
+	<header>
+		<nav>
+			<a href="#" style="color:yellow; font-size: 25px;font-family: calibri;margin-left: 30px;text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px grey;"><b>R <span style="color:white;">N</span> T</b></a>
+			<a href="#"><img src="t1.jpg"alt="logo"width="30px"height="30px" style="border-radius: 50%;margin-left: 10px;"></a>
+
+			<a href="#" style="margin-left: 10px;">&nbsp;<span>|</span> &nbsp;About &nbsp;<span>|</span>&nbsp;</b></a>
+			<a href="#"> Places To Visit &nbsp;<span>|</span>&nbsp;</a>
+			<a href="#">Hotels & Resorts &nbsp;<span>|</span>&nbsp;</a>
+			<a href="#">Safari Bookings &nbsp;<span>|</span>&nbsp;</a>
+			<a href="#" style="color:white;">Ranthambore National Park </a>
+			<img src="nature.png" height="20px" style="margin-top: 6px;">
+			
+		</nav>
+	</header><br>
+<main>
+  
+		
+   <!-----------SECTION 1 --------->
+  <div class="slideshow-container">
+
+ 
+  <div class="slideshow">
+    <img src="6.jpg"  class="center">
+    <div class="overlay">
+      <div class="text">Brief Explanation About These Places</div>
+    </div>
+  </div>
+
+  <div class="slideshow">    
+    <img src="3.jpg"  class="center"> 
+    <div class="overlay">
+      <div class="text">Brief Explanation About These Places</div>
+    </div>   
+  </div>
+  <div class="slideshow">
+    <img src="7.jpg"  class="center">
+    <div class="overlay">
+      <div class="text">Brief Explanation About These Places</div>
+    </div>
+  </div>
+  
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+ <!-- <span class="dot" onclick="currentSlide(4)"></span>---->
+  
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slideshow");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+<div id="welcome">
+	<h1>Welcome To Ranthambore <br> (RNT)</h1>
+	<hr style="width:65px; color:#dbe2f0; margin:0 auto;">
+	<hr style="width:45px; color:#dbe2f0; margin:0 auto;margin-top: 6px;">
+	<p id="visiblePara" >Ranthambore is an absolute paradise for wildlife enthusiasts. It is widely recognized for its National Park and Tiger Reserve, but these are not the only places that make Ranthambore a popular tourist destination. The unquestionably mesmerizing locales, palaces, and royal ruins make Ranthambore more than just a popular wildlife habitat.
+		<br><br>
+		So don’t just adore the enthralling locales or feast your eyes on to the beautiful escapades of Ranthambore but indulge in many other interesting activities that are an absolute value for your money and time. </p>
+
+    <p id="hiddenPara" > Ranthambore National Park is one of the biggest and most renowned national parks in Northern India. The park is located in the Sawai Madhopur district of southeastern Rajasthan, which is about 130 km from Jaipur.
+      <br><br>
+       Once considered as one of the famous and former hunting grounds of the Maharajas of Jaipur, today the Ranthambore National Park terrain is a major wildlife tourist attraction that has drawn the attention of many wildlife photographers and lovers.</p>
+	 <button type="button" id="welcomebtn" onclick="myFunction()" style="cursor:pointer;float:right;margin-right: 55px; background-color: #45B8AC; width:120px; height:40px; color:white; font-size: 16px; border-radius: 25px;">Read More...</button></a>
+</div>
+
+<script>
+  
+var welcome = document.getElementById("welcome");
+var welcomebtn = document.getElementById("welcomebtn");
+var hiddenPara =document.getElementById("hiddenPara");
+  welcome.style.height = "540px";
+  hiddenPara.style.display = "none";
+function myFunction() {
+  
+  if (welcome.style.height == "540px") {
+        welcome.style.height  = "780px";
+        welcomebtn.style.marginTop = "40px";
+        welcomebtn.innerHTML = "Read Less";
+        hiddenPara.style.display = "block";
+        welcome.style.transition= "0.5s";
+                 
+      }
+      else {
+        welcome.style.height = "540px";
+        welcomebtn.style.marginTop = "10px";
+        hiddenPara.style.display = "none";
+        welcomebtn.innerHTML = "Read More...";
+        welcome.style.transition= "0.4s";
+      }
+}
+</script>
+
+
+<div class="reach">
+  
+	<h1>How To Reach</h1>
+	<hr style="width:65px; color:#dbe2f0; margin:0 auto;">
+	<hr style="width:45px; color:#dbe2f0; margin:0 auto;margin-top: 6px;">
+	<p style="font-size: 20px; color: grey; font-family: arial;margin-left:15px; margin-right: 25px; line-height:30px;text-align: center;">
+     One of the most celebrated tiger reserve forests in India, The Ranthambore national park is situated in the Sawai Madhopur district of Rajasthan state in India. The park is well connected through the rail and road with the all major cities of India. Jaipur, the capital of Rajasthan, is around 160 km from the park and is also the nearest airport. Reaching at the Ranthambore Park is easy for tourists from any corner of the world. Here is detailed information on how to reach the Ranthambore National Park-
+	</p>
+	<br><br>
+  <div class="mimg">
+    <img src="air.png" alt="air" class="air">
+    <img src="train.png" alt="rail" class="rail">
+    <img src="bus.png" alt="road" class="road">
+  </div>
+<div class="mode l" >
+	<p class="mode-head"><b>By Air</b></p>
+	<p class="mode-body">Jaipur International Airport is the nearest airport to Ranthambore, situated at a distance of around 200 kilometers. From the airport, you can hire taxis & private vehicles to reach the park.</p>
+	
+</div>
+<div class="mode m" >
+	<p class="mode-head" ><b>By Rail</b></p>
+	<p class="mode-body">Sawai Madhopur Railway Station is the nearest railway station, situated about 14 kilometers.  from Ranthambore National Park. Jaipur Railway Station is located around 200 kilometers from the park. Both of them enjoy good rail connectivity to the major cities of India.</p>
+</div>
+<div class="mode r" >
+	<p class="mode-head" ><b>By Road</b></p>
+	<p class="mode-body">Ranthambore is connected to Delhi via NH 11A & NH8, while Udaipur & Allahabad are connected to it via NH 76. SH 24 connects Ranthambore to Jaipur, while Agra & Bharatpur are connected to it via SH 1. Delhi is located 381 km, Agra 239 km, Udaipur 388 km <!--& Mumbai 1031 km from Ranthambore National Park.---></p>
+</div>
+
+</div>
+<section class="section-4">
+  <h1>When is the best time to visit Ranthambore ?</h1>
+  <hr style="width:65px; color:#dbe2f0; margin:0 auto;">
+	<hr style="width:45px; color:#dbe2f0; margin:0 auto;margin-top: 6px;">
+	<p class="visit">
+		
+    The popular wildlife destination in India, Ranthambore National Park remains open between October and June.
+    The winter season between October and March is considered the best time to visit Ranthambore National Park
+    due to the pleasant weather condition when the temperature ranges between comfortable 10℃ and 30℃.
+    During this season, animals can be seen in the broad daylight basking under the sun. <br><br>
+
+    In the months between April and June (summer season), Ranthambore experiences hot and humid weather with
+    mercury rising up to 40℃. The month of April is still comfortable with temperatures not exceeding more
+    than 30 – 35℃. However, May and June are extremely hot months. During the summers though, one has more
+    chances of sighting tigers and other animals who frequently have to visit the water holes to keep themselves
+    hydrated. <br><br>
+
+    In the monsoon season between July and September, many of the zones of Ranthambore National Park remain 
+    closed for the visitors. The core of the national park with Gates 1 to 5 remain closed in the monsoon;
+     the buffer zone with Gate 6 to 10 remain open in this season.
+  </p>
+
+</section>
+<h1>Famous Tigers of Ranthambore </h1>
+<hr style="width:65px; color:#dbe2f0; margin:0 auto;">
+<hr style="width:45px; color:#dbe2f0; margin:0 auto;margin-top: 6px;">
+
+<section class="section-5">
+  
+ 
+  <div class="t1">
+    <img src="ustad.png" alt="Tiger T24 (Ustad)" class="t1">
+    <h4>Tiger T24 <br> (Ustad)</h4>
+  </div>
+  <div class="t2">
+    <img src="sundari.jpg" alt="Tiger T17 (Sundari)" class="t2">
+    <h4>Tiger T17 <br> (Sundari)</h4>
+  </div>
+  <div class="t3">
+    <img src="dollar.jpg" alt="Tiger T25 (Dollar)" class="t3">
+    <h4>Tiger T25 <br> (Dollar)</h4>
+  </div>
+  <div class="t4">
+    <img src="machli.jpg" alt="Tiger T16 (Machli)" class="t4">
+    <h4>Tiger T16 <br> (Machli)</h4>
+  </div>
+ 
+</section>  
+
+<section class="gallery">
+  <h1>Gallery</h1>
+<hr style="width:65px; color:#dbe2f0; margin:0 auto;">
+<hr style="width:45px; color:#dbe2f0; margin:0 auto;margin-top: 6px;"> <br><br><br>
+
+<video width="400" height="250" controls  class="v1">
+  <source src="video1.mp4" type="video/mp4">
+</video>
+<video width="300" height="250" controls class="v2">
+  <source src="video2.mp4" type="video/mp4">
+</video>
+<video width="500" height="250" controls class="v3">
+  <source src="video3.mp4" type="video/mp4">
+</video>
+</section>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+</main>
+
+<footer id="footer"></footer>
+
+</body>
+</html>
